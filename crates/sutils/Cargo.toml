@@ -1,0 +1,16 @@
+[package]
+name = "sutils"
+version = "0.1.0"
+description = "Utilities for writing Solana programs"
+keywords = ["solana"]
+documentation = "https://docs.rs/sutils/latest/sutils/"
+readme = "../../README.md"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies.solana-program]
+version = "2.2"
+[dev-dependencies.bs58]
+version = "0.5.1"
