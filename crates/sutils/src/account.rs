@@ -3,9 +3,7 @@
 use {
     crate::discriminator::AccountDiscriminator,
     solana_program::{
-        account_info::AccountInfo,
-        program_error::ProgramError,
-        entrypoint::ProgramResult,
+        account_info::AccountInfo, entrypoint::ProgramResult, program_error::ProgramError,
         pubkey::Pubkey,
     },
 };
@@ -131,7 +129,8 @@ mod test {
     use {
         super::*,
         crate::{account::AccountDeserialize, uint::parse_u64},
-        solana_program::pubkey::Pubkey, std::str::FromStr,
+        solana_program::pubkey::Pubkey,
+        std::str::FromStr,
     };
 
     #[derive(Debug, PartialEq, Eq, Clone)]

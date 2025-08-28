@@ -1,6 +1,8 @@
 //! Trait for defining instruction processing functions
 
-use solana_program::{account_info::AccountInfo, entrypoint::ProgramResult, program_error::ProgramError};
+use solana_program::{
+    account_info::AccountInfo, entrypoint::ProgramResult, program_error::ProgramError,
+};
 
 /// InstructionProcessor is a trait used to define how any given instruction may be constructed, and subsequently processed
 pub trait InstructionProcessor<'a, Ix, T>: Sized {

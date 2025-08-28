@@ -1,6 +1,5 @@
 //! Helper functions for working with uint types
 
-
 use solana_program::pubkey::Pubkey;
 
 #[inline(always)]
